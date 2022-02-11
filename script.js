@@ -56,6 +56,9 @@ function colorSquare(e) {
         square.style.backgroundColor = `rgb(${currentRed - 25.6}, ${currentGreen - 25.6}, ${currentBlue - 25.6})`; // add 10% of blackness to the color
     }
 
+    else {
+        console.error("ERROR: Invalid Mode");
+    }
 }
 
 // Return the equivalent number array of a color in the rgb format "rgb('xxx', 'xxx', 'xxx')" 
