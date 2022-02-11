@@ -15,15 +15,15 @@ body {
 }
 
 .reset-section {
-    height: 10%;
-    margin-bottom: 20px;
+    height: 9%;
+    /* margin-bottom: 2px; */
 }
 
 .playing-section {
-    height: 65%;
+    height: 91%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
 }
 
 .screen {
@@ -32,7 +32,7 @@ body {
     flex-shrink: 0;
     background-color: white;
     border: 15px solid gray;
-    box-shadow: 12px 12px 12px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -40,7 +40,7 @@ body {
 
 button {
     display: block;
-    width: 180px;
+    width: 170px;
     margin-bottom: 150px;
     background-color: black;
     color: inherit;
@@ -48,7 +48,7 @@ button {
     border-color: red;
     border-radius: 10px;
     font-size: 14px;
-    padding: 15px;
+    padding: 12px;
 }
 
 h1 {
