@@ -7,7 +7,6 @@ let currentMode = BLACK_MODE;
 
 const screen = document.querySelector(".screen");
 const screenStyles = window.getComputedStyle(screen);
-screen.style.cssText = "display: flex; flex-wrap: wrap; align-items: flex-start;";
 
 const resetButton = document.querySelector(".reset-section > button");
 resetButton.addEventListener("click", resetGrid);
