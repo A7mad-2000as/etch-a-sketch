@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    font-family: 'Brush Script MT', cursive;
+    color: red;
+    background-image: url("wild_oliva.png");
+}
+
+.playing-area {
+    width: 75%;
+    min-width: 850px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reset-section {
+    height: 10%;
+    margin-bottom: 20px;
+}
+
+.playing-section {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.screen {
+    width: 700px;
+    height: 700px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 15px solid gray;
+    box-shadow: 12px 12px 12px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    display: block;
+    width: 180px;
+    margin-bottom: 150px;
+    background-color: black;
+    color: inherit;
+    font-family: inherit;
+    border-color: red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.reset-section > button {
+    margin: 0 auto;
+}
