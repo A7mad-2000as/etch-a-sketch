@@ -78,7 +78,6 @@ function resetGrid() {
         else if (isNaN(newGridSize) || newGridSize === "" || Number(newGridSize) < 16 || Number(newGridSize) > 100) {
             validInput = false;
             newGridSize = prompt("Please enter a valid number between 16 and 100: ", 16);
-            console.log(newGridSize);
         }
         else {
             validInput = true;
