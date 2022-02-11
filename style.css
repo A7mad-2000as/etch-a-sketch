@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital,wght@0,200;0,600;1,900&display=swap');
+
 body {
     height: 100vh;
-    font-family: 'Brush Script MT', cursive;
+    font-family: Audiowide, cursive;
     color: red;
     background-image: url("wild_oliva.png");
 }
@@ -42,7 +44,7 @@ button {
     font-family: inherit;
     border-color: red;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 15px;
 }
 
