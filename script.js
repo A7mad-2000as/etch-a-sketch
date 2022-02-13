@@ -1,12 +1,12 @@
 const BLACK_MODE = 0;
 const RANDOM_MODE = 1;
 const GRADIENT_MODE = 2;
-const SCREEN_SIZE = 700;
 
 let currentMode = BLACK_MODE;
 
 const screen = document.querySelector(".screen");
 const screenStyles = window.getComputedStyle(screen);
+let screenSize;
 
 const resetButton = document.querySelector(".reset-section > button");
 resetButton.addEventListener("click", resetGrid);
@@ -14,10 +14,13 @@ resetButton.addEventListener("click", resetGrid);
 const buttons = document.querySelectorAll(".control-buttons > button");
 buttons.forEach(button => button.addEventListener("click", changeMode));
 
-drawGrid(16);
+window.addEventListener("load", () => {
+    screenSize = Number(screenStyles.getPropertyValue("width").slice(0, -2));
+    drawGrid(16)
+});
 
 function drawGrid(gridSize) {
-    let innerSquareSize = SCREEN_SIZE / gridSize;
+    let innerSquareSize = screenSize / gridSize;
 
     for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
